@@ -1,0 +1,20 @@
+  <%- include("partials/head",{title: "Serialpooort"}) %> 
+  <script src="/javascripts/index.js"></script>
+  <body>
+    <%- include("partials/header") %> 
+    <main>
+      <h1>Serialport</h1>
+      <p>Welcome to Serialport: <%= data %> </p>
+      <form action="/on">
+        <button class="on" type="submit">Encender</button>
+      </form>
+      <form action="/off">
+        <button class="off" type="submit">Apagar</button>
+      </form>
+      <form action="/listen">
+        <button type="submit">Escuchar</button>
+      </form>
+    </main>
+    <%- include("partials/footer") %> 
+  </body>
+</html>
