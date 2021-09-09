@@ -6,7 +6,8 @@ int val2 = LOW;
 
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(250000);
+  Serial.setTimeout(1);
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
   }
@@ -17,6 +18,7 @@ void setup() {
 }
 
 void loop() {
+    //Almacenamiento de valor pasado
   val2 = val;
   val = digitalRead(button);
   
@@ -41,5 +43,4 @@ void loop() {
       Serial.println("Comando inválido");
     }
   }
-
 }

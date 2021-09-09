@@ -1,0 +1,7 @@
+{
+    "sketch": "funcion_lectura_serie.ino",
+    "board": "arduino:avr:uno",
+    "port": "COM5",
+    "programmer": "arduino:avrispmkii",
+    "output": "../ArduinoOutput"
+}
